@@ -3,7 +3,7 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
-            "tab":"1",
+            "tab":"4",
             "data_file": "data/texts.json",
             "stimuli": "number of positive charges" 
         },
