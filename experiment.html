@@ -131,6 +131,7 @@
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
                     trialData.push(headers);
                     next();
+                    participantId = ACPToolKit.getCurrentParticipantId();
                     
                 })
             });
