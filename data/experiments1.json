@@ -10,8 +10,8 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
+            "tab":"3",
+            "data_file": "data/textThree.json",
             "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage." 
         },
         { 
