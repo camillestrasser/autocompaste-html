@@ -122,7 +122,8 @@
             }
 
             $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
+                participantId = ACPToolKit.getCurrentParticipantId();
+                $.get('data/experiments'+participantId.toString()+'.json', function (data) {
                     // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
@@ -130,7 +131,7 @@
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
                     trialData.push(headers);
                     next();
-                    participantId = ACPToolKit.getCurrentParticipantId();
+                    
                 })
             });
         </script>
