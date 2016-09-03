@@ -55,7 +55,7 @@
                             </tr>
                             <tr>
                                 <td>Block</td>
-                                <td><span class="js-expt-current-block"></span> / <span class="js-expt-num-blocks"></span></td>
+                                <td>1 / 3 </td>
                             </tr>
                         </tbody>
                     </table>
@@ -81,27 +81,22 @@
         <script src="js/ACPToolKit.js"></script>
 
         <script>
-
             var trialsData;
             var currentTrial;
             var totalNumberOfTrials;
-            var currentBlock;
-            var totalNumberOfBlocks;
-            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block',
+            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block'
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
             var participantId;
-
             function next () {
                 if (currentTrial !== 0) {
                     // Save results of current trial
                     var trialResult = ACPToolKit.getCurrentTrialState();
-
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
-                    var tab=trialResult.tab;
-                    var block=currentBlock;
+                    var tab=trialResult.tab
+                    var block=1
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
@@ -109,39 +104,30 @@
                     var trialEndTime = trialResult.end_time;
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
-
                     var row = [participantId, technique, granularity, tab, block, trialNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
-                if (currentTrial<totalNumberOfTrials){
+                if (currentTrial < totalNumberOfTrials) {
+                    // Show the next trial
+                    ACPToolKit.presentTrial(trialsData[currentTrial]);
+                    currentTrial += 1;
+                    $('.js-expt-current-trial').text(currentTrial);
+                } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
-                    window.location = 'break';
+                    window.location = 'break1.html';
                 }
-                else {
-                    // Show the next trial
-                    ACPToolKit.presentTrial(trialsData[currentTrial+(currentBlock-1)*36]);
-                    currentTrial += 1;
-                    
-                    $('.js-expt-current-trial').text(currentTrial);
-                    
-                } 
             }
-
             $(document).ready(function () {
                     participantId = ACPToolKit.getCurrentParticipantId();
-                    currentBlock=1;
-                    $.getJSON('data/experiments'+participantId.toString()+currentBlock.toString()'.json', function (data) {
+                    $.getJSON('data/experiments'+participantId.toString()+'1'+'.json', function (data) {
                     // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
-                    totalNumberOfTrials = trialsData.length();
-                    totalNumberOfBlocks=3;
+                    totalNumberOfTrials = trialsData.length;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
-                    $('.js-expt-num-blocks').text(totalNumberOfBlocks);
-                    $('.js-expt-current-block').text(currentBlock);
                     trialData.push(headers);
                     next();
                     participantId = ACPToolKit.getCurrentParticipantId();

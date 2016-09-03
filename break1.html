@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1 - AutoComPaste vs Ctrl-C Ctrl-V</title>
+        <title>CSIS-Break</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,7 +22,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Welcome</a></li>
                         <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li class="active"><a href="instructions.html">Instructions</a></li>
+                        <li><a href="instructions.html">Instructions</a></li>
                         <li><a href="experiment.html">Experiment</a></li>
                         <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
                     </ul>
@@ -33,15 +33,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>Instructions</h1>
+                    <h1>Break</h1>
                     <hr>
-                    <p>Dear participant <span class="js-pid pid"></span>, please read the instructions before the experiment.
-
-                    <p>There should always be an instruction before doing the actual evaluation of the interface.<p>
-                    <p>Enter your instructions to your participant here. Diagrams and screenshots will be very helpful!</p>
-
-                    <form class="form-inline">
-                        <button type="submit" class="btn btn-primary btn-lg">Next</button>
+                    
+                    </br>
+                    <p>You have a small break (around 60s). When you're ready, please press the "End break" button.</p>
+                    </br>
+                    <form class="form-inline" id="break">
+                        <button type="submit" class="btn btn-primary">End Break</button>
                     </form>
                 </div>
             </div>
@@ -55,9 +54,15 @@
 
         <script>
             $(function () {
-                $('form').submit(function (event) {
+                $('#break').submit(function (event) {
                     event.preventDefault();
-                    window.location = 'experiment1.html';
+                    var participantId = ACPToolKit.getCurrentParticipantId();;
+                    if (participantId) {
+                        ACPToolKit.setCurrentParticipantId(participantId);
+                        window.location = 'experiment.html';
+                    } else {
+                        alert('Please enter a valid Participant ID!');
+                    }
                 });
             });
         </script>
