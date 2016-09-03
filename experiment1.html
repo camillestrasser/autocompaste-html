@@ -84,7 +84,7 @@
             var trialsData;
             var currentTrial;
             var totalNumberOfTrials;
-            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block'
+            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
@@ -95,8 +95,8 @@
                     var trialResult = ACPToolKit.getCurrentTrialState();
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
-                    var tab=trialResult.tab
-                    var block=1
+                    var tab=trialResult.tab;
+                    var block=1;
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
