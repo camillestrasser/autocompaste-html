@@ -124,9 +124,9 @@
                     currentTrial += 1;
                     if((currentTrial>=36)&(currentTrial%36==1))
                     {
-                        currentBlock+=1
-                        currentTrial=0
-                        window.location = 'break.html'
+                        currentBlock+=1;
+                        currentTrial=0;
+                        window.location = 'break.html';
                     }
                     else{
                     $('.js-expt-current-trial').text(currentTrial);
@@ -142,7 +142,7 @@
                     // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
-                    currentBlock=1
+                    currentBlock=1;
                     totalNumberOfTrials = trialsData.length/totalNumberOfBlocks;
                     totalNumberOfBlocks=3
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
