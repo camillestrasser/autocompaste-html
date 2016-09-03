@@ -1,48 +1,6 @@
 {
     "experiments": [
-       { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is active region?" 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "Power supply that delivers an AC voltage." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "Equipment that will operate on either an AC or DC power source.." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "A circuit that increases the voltage, current, or power of a signal." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "A multi vibrator with two stable states." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "To reduce the amplitude of an action or signal" 
-        },
-        { 
+    { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
             "tab":"1",
@@ -127,46 +85,46 @@
             "stimuli": "alkaline manganese cell" 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"1",
             "data_file": "data/textSingle.json",
-            "stimuli": "Device used to transform mechanical energy into AC electrical power." 
+            "stimuli": "What is active region?" 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"1",
             "data_file": "data/textSingle.json",
-            "stimuli": "What is AC/DC?" 
+            "stimuli": "Power supply that delivers an AC voltage." 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"1",
             "data_file": "data/textSingle.json",
-            "stimuli": "Example: radio waves lose some of their energy as they travel through that atmosphere." 
+            "stimuli": "Equipment that will operate on either an AC or DC power source.." 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"6",
             "data_file": "data/texts.json",
-            "stimuli": "Condition that occurs when a bridge circuit is adjusted to produce a zero output." 
+            "stimuli": "A circuit that increases the voltage, current, or power of a signal." 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"6",
             "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective." 
+            "stimuli": "A multi vibrator with two stable states." 
         },
         { 
-            "technique": "TRADITIONAL", 
+            "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"6",
             "data_file": "data/texts.json",
-            "stimuli": "The \"P\" material of a diode.." 
+            "stimuli": "To reduce the amplitude of an action or signal" 
         },
         { 
             "technique": "TRADITIONAL", 
@@ -251,6 +209,48 @@
             "tab":"6",
             "data_file": "data/texts.json",
             "stimuli": "carbon-zinc cell" 
-        }            
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "Device used to transform mechanical energy into AC electrical power." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is AC/DC?" 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "Example: radio waves lose some of their energy as they travel through that atmosphere." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "Condition that occurs when a bridge circuit is adjusted to produce a zero output." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "The \"P\" material of a diode.." 
+        }       
     ]
 }

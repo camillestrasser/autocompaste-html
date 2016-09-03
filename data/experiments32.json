@@ -1,11 +1,88 @@
 {
     "experiments": [
-       { 
+      { 
             "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
+            "granularity": "paragraph",
             "tab":"1",
             "data_file": "data/textSingle.json",
-            "stimuli": "What is active region?" 
+            "stimuli": "What is AC/DC? Equipment that will operate on either an AC or DC power source." 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is active component? A component that changes the amplitude of a signal between input and output." 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "What is bipolar junction transistor? (BJT), A three terminal device in which emitter to collector current is controlled by base current." 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "What is armature? The rotating or moving component of a magnetic circuit." 
+        },
+         { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "What is alpha? Ratio of collector current to emitter current in a bipolar junction transistor (BJT) Greek letter alpha \"a\" is the symbol used." 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "active filter" 
+        },
+         { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "Trivalent atoms" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "AC coupling" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "barrier potential" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "alkaline manganese cell" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "Aviation electronics" 
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -24,9 +101,9 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "A circuit that increases the voltage, current, or power of a signal." 
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is active region?" 
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -44,138 +121,12 @@
         },
         { 
             "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is AC/DC? Equipment that will operate on either an AC or DC power source." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is active component? A component that changes the amplitude of a signal between input and output." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "What is alpha? Ratio of collector current to emitter current in a bipolar junction transistor (BJT) Greek letter alpha \"a\" is the symbol used." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "What is bipolar junction transistor? (BJT), A three terminal device in which emitter to collector current is controlled by base current." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "What is armature? The rotating or moving component of a magnetic circuit." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "AC coupling" 
-        },
-         { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "active filter" 
-        },
-         { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "Trivalent atoms" 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "Aviation electronics" 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "barrier potential" 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "phrase",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "alkaline manganese cell" 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "Device used to transform mechanical energy into AC electrical power." 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is AC/DC?" 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "Example: radio waves lose some of their energy as they travel through that atmosphere." 
-        },
-        { 
-            "technique": "TRADITIONAL", 
             "granularity": "sentence",
             "tab":"6",
             "data_file": "data/texts.json",
-            "stimuli": "Condition that occurs when a bridge circuit is adjusted to produce a zero output." 
+            "stimuli": "A circuit that increases the voltage, current, or power of a signal." 
         },
         { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective." 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "The \"P\" material of a diode.." 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "paragraph",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
-            "stimuli": "What is active region? The region of BJT operation between saturation and cut off used for linear amplification." 
-        },
-         { 
             "technique": "TRADITIONAL", 
             "granularity": "paragraph",
             "tab":"1",
@@ -188,6 +139,13 @@
             "tab":"1",
             "data_file": "data/textSingle.json",
             "stimuli": "What is active component? A component that changes the amplitude of a signal between input and output." 
+        },
+         { 
+            "technique": "TRADITIONAL", 
+            "granularity": "paragraph",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is active region? The region of BJT operation between saturation and cut off used for linear amplification." 
         },
         { 
             "technique": "TRADITIONAL", 
@@ -215,13 +173,6 @@
             "granularity": "phrase",
             "tab":"1",
             "data_file": "data/textSingle.json",
-            "stimuli": "DC voltage" 
-        },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "phrase",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
             "stimuli": "the amplitude of a signal" 
         },
          { 
@@ -231,12 +182,12 @@
             "data_file": "data/textSingle.json",
             "stimuli": "The region of BJT operation" 
         },
-        { 
+         { 
             "technique": "TRADITIONAL", 
             "granularity": "phrase",
-            "tab":"6",
-            "data_file": "data/texts.json",
-            "stimuli": "only two symbols" 
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "DC voltage" 
         },
         { 
             "technique": "TRADITIONAL", 
@@ -251,6 +202,55 @@
             "tab":"6",
             "data_file": "data/texts.json",
             "stimuli": "carbon-zinc cell" 
-        }            
+        },
+          { 
+            "technique": "TRADITIONAL", 
+            "granularity": "phrase",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "only two symbols" 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "What is AC/DC?" 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "Example: radio waves lose some of their energy as they travel through that atmosphere." 
+        },
+          { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"1",
+            "data_file": "data/textSingle.json",
+            "stimuli": "Device used to transform mechanical energy into AC electrical power." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "The \"P\" material of a diode.." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "Condition that occurs when a bridge circuit is adjusted to produce a zero output." 
+        }       
     ]
 }
