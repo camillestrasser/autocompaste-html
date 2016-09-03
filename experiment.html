@@ -85,7 +85,7 @@
             var trialsData;
             var currentTrial;
             var totalNumberOfTrials;
-            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block'
+            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
@@ -98,8 +98,8 @@
 
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
-                    var tab=trialResult.tab
-                    var block=trialResult.block
+                    var tab=trialResult.tab;
+                    var block=currentBlock;
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
@@ -144,7 +144,7 @@
                     currentTrial = 0;
                     currentBlock=1;
                     totalNumberOfTrials = trialsData.length/totalNumberOfBlocks;
-                    totalNumberOfBlocks=3
+                    totalNumberOfBlocks=3;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
                     $('.js-expt-num-blocks').text(totalNumberOfBlocks);
                     $('.js-expt-current-block').text(currentBlock);
