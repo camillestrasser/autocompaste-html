@@ -3,14 +3,14 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
-            "tab":"1",
-            "data_file": "data/textSingle.json",
+            "tab":"2",
+            "data_file": "data/texts.json",
             "stimuli": "What is acceptor atoms?" 
         } 
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
-            "tab":"6",
+            "tab":"3",
             "data_file": "data/texts.json",
             "stimuli": "What is acceptor atoms?" 
         }      
