@@ -85,6 +85,8 @@
             var trialsData;
             var currentTrial;
             var totalNumberOfTrials;
+            var currentBlock;
+            var totalNumberOfBlocks;
             var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
@@ -113,37 +115,29 @@
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
-                if ((currentBlock==3)&&(currentTrial=totalNumberOfTrials)){
+                if (currentTrial<totalNumberOfTrials){
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
-                    window.location = 'questionnaire-post.html';
+                    window.location = 'break.html';
                 }
                 else {
                     // Show the next trial
                     ACPToolKit.presentTrial(trialsData[currentTrial+(currentBlock-1)*36]);
                     currentTrial += 1;
-                    if((currentTrial>=36)&(currentTrial%36==1))
-                    {
-                        currentBlock+=1;
-                        currentTrial=0;
-                        window.location = 'break.html';
-                    }
-                    else{
+                    
                     $('.js-expt-current-trial').text(currentTrial);
-                    }
-
+                    
                 } 
             }
 
             $(document).ready(function () {
                     participantId = ACPToolKit.getCurrentParticipantId();
-
-                    $.getJSON('data/experiments'+participantId.toString()+'.json', function (data) {
+                    currentBlock=1;
+                    $.getJSON('data/experiments'+participantId.toString()+currentBlock.toString()'.json', function (data) {
                     // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
-                    currentBlock=1;
-                    totalNumberOfTrials = trialsData.length/totalNumberOfBlocks;
+                    totalNumberOfTrials = trialsData.length();
                     totalNumberOfBlocks=3;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
                     $('.js-expt-num-blocks').text(totalNumberOfBlocks);
