@@ -6,6 +6,13 @@
             "tab":"1",
             "data_file": "data/textSimple.json",
             "stimuli": "What is acceptor atoms?" 
-        }     
+        } 
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "sentence",
+            "tab":"6",
+            "data_file": "data/texts.json",
+            "stimuli": "What is acceptor atoms?" 
+        }      
     ]
 }
