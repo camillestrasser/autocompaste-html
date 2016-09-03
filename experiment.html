@@ -120,7 +120,7 @@
                 }
                 else {
                     // Show the next trial
-                    ACPToolKit.presentTrial(trialsData[currentTrial]);
+                    ACPToolKit.presentTrial(trialsData[currentTrial+(currentBlock-1)*36]);
                     currentTrial += 1;
                     if((currentTrial>=36)&(currentTrial%36==1))
                     {
@@ -129,7 +129,7 @@
                         window.location = 'break.html'
                     }
                     else{
-                    $('.js-expt-current-trial').text(currentTrial%36);
+                    $('.js-expt-current-trial').text(currentTrial);
                     }
 
                 } 
@@ -149,7 +149,6 @@
                     $('.js-expt-num-blocks').text(totalNumberOfBlocks);
                     $('.js-expt-current-block').text(currentBlock);
                     trialData.push(headers);
-                    if(totalNumberOfTrials=36)
                     next();
                     participantId = ACPToolKit.getCurrentParticipantId();
                     
