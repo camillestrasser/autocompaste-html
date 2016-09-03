@@ -40,50 +40,50 @@
                     <form id="post-expt-form">
                         
                         <div class="form-group">
-                            <label for="TO">How will you rate the ease of use of the Traditional Technique with only one tab?</label>
-                            <select class="form-control" name="q1">
+                            <label for="q1">How will you rate the ease of use of the Traditional Technique with only one tab?</label>
+                            <select class="form-control" name="Tradi-OneTab">
                                 <option value="1">Very easy</option>
                                 <option value="2">Easy</option>
                                 <option value="3">Neutral</option>
                                 <option value="4">Difficult</option>
-                                <option value="o5">Very Difficult</option>
+                                <option value="5">Very Difficult</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="TM">How will you rate the ease of use of the Traditional Technique with many tabs?</label>
-                            <select class="form-control" name="q2">
+                            <label for="q2">How will you rate the ease of use of the Traditional Technique with many tabs?</label>
+                            <select class="form-control" name="Tradi-ManyTabs">
                                 <option value="1">Very easy</option>
                                 <option value="2">Easy</option>
                                 <option value="3">Neutral</option>
                                 <option value="4">Difficult</option>
-                                <option value="o5">Very Difficult</option>
+                                <option value="5">Very Difficult</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="ASP">How will you rate the ease of use of the Autocompaste technique with short phrases?</label>
-                            <select class="form-control" name="q3">
+                            <label for="q3">How will you rate the ease of use of the Autocompaste technique with short phrases?</label>
+                            <select class="form-control" name="AutoShort">
                                 <option value="1">Very easy</option>
                                 <option value="2">Easy</option>
                                 <option value="3">Neutral</option>
                                 <option value="4">Difficult</option>
-                                <option value="o5">Very Difficult</option>
+                                <option value="5">Very Difficult</option>
                             </select>
                         </div>
 
                         
                         <div class="form-group">
-                            <label for="Technique preferred">Which technique do you prefer?</label>
+                            <label for="q4">Which technique do you prefer?</label>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q4" id="optionsRadios1" value="1">
+                                <input type="radio" name="prefTech" id="tradi" value="1">
                                 Traditional technique
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q4" id="optionsRadios2" value="2">
+                                <input type="radio" name="prefTech" id="auto" value="2">
                                 Autocompaste
                               </label>
                             </div>
@@ -91,12 +91,12 @@
 
                         <div class="form-group">
                             <label for="q5">Why?</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
+                            <textarea class="form-control" id="q5" name="Why" placeholder="Enter response"></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="q6">Any other comments?</label>
-                            <textarea class="form-control" id="q6" name="q6" placeholder="Enter response"></textarea>
+                            <textarea class="form-control" id="q6" name="Comments" placeholder="Enter response"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
