@@ -55,7 +55,7 @@
                             </tr>
                             <tr>
                                 <td>Block</td>
-                                <td>1 / 3 </td>
+                                <td>1 / 3</td>
                             </tr>
                         </tbody>
                     </table>
@@ -84,7 +84,7 @@
             var trialsData;
             var currentTrial;
             var totalNumberOfTrials;
-            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab', 'Block',
+            var headers = ['Participant id', 'Technique', 'Granularity', 'Tab',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
@@ -96,7 +96,6 @@
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
                     var tab=trialResult.tab;
-                    var block=1;
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
@@ -104,7 +103,7 @@
                     var trialEndTime = trialResult.end_time;
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
-                    var row = [participantId, technique, granularity, tab, block, trialNum,
+                    var row = [participantId, technique, granularity, tab, trialNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
@@ -123,7 +122,7 @@
             $(document).ready(function () {
                     participantId = ACPToolKit.getCurrentParticipantId();
                     $.getJSON('data/experiments.json', function (data) {
-                    // Initialise experiments  '+participantId.toString()+'1
+                    // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
