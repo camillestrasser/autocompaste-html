@@ -4,7 +4,7 @@
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
             "tab":"1",
-            "data_file": "data/textSimple.json",
+            "data_file": "data/textSingle.json",
             "stimuli": "What is acceptor atoms?" 
         } 
         { 
