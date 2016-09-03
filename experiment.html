@@ -122,7 +122,7 @@
                     // Show the next trial
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
-                    if(currentTrial%36==1)
+                    if((currentTrial>=36)&(currentTrial%36==1))
                     {
                         currentBlock+=1
                         currentTrial=0
